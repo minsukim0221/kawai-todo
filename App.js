@@ -10,7 +10,7 @@ export default class App extends React.Component {
         newToDo: ""
     }
   render() {
-    const{ newToDo } = this.state;
+    const{ newToDo } = this.state; 
     return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
@@ -19,7 +19,7 @@ export default class App extends React.Component {
             <TextInput style ={styles.input} placeholder={"New To Do(할일)"} value={newToDo} onChangeText={this._controlNewToDo} placeholderTextColor={"#999"} returnKeyType={"done"} autoCorrect={false}/>
             
         <ScrollView contentContainerStyle={styles.toDos}>
-            <ToDo />
+            <ToDo text={"Hello im a To Do"} /> 
         </ScrollView>
         
         </View> 
